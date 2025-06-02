@@ -1,0 +1,49 @@
+# python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+eggs/
+parts/
+var/
+*.log
+
+# virtualenv
+.venv/
+env/
+venv/
+
+# Django
+*.sqlite3
+*.log
+media/
+# if you have local settings or env files
+.env
+*.env
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# React / Node
+/frontend-react/node_modules/
+/frontend-react/dist/
+/frontend-react/.cache/
+/frontend-react/build/
+
+# misc
+*.bak
+*.swp
