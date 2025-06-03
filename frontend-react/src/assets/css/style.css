@@ -2,6 +2,17 @@ body{
     background-color: #8DBCC7
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    /* min-height in order to fill screen */
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
 .bg-light-dark {
     background-color: #A4CCD9;
 }

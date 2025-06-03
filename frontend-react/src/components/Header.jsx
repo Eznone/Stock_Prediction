@@ -2,7 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <nav className='navbar container pt-3 pb-3'>
+    /* align items start fixes error of header being to low */
+    <nav className='navbar container pt-3 pb-3 align-items-start'>
         <a className="navbar-brand text-light text-accent" href="">Stock Prediction Portal</a>
     
         <div>

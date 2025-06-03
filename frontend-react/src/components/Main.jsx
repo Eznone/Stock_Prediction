@@ -8,6 +8,8 @@ const Main = () => {
             <p className='text-light text-offwhite lead'>
               This Stock Prediction Portal leverages historical market data, technical indicators and advanced machine learning algorithms to forecast short- and long-term price trends. With a Django-powered API for data processing and a React frontend for real-time visualization, it provides actionable insights to help you make smarter investment decisions.
             </p>
+            <a className="btn btn-outline-ebffd8 " href="">Login Now</a>
+
         </div>
     
     </div>
