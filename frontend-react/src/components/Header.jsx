@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button.jsx'
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
         <a className="navbar-brand text-light text-accent" href="">Stock Prediction Portal</a>
     
         <div>
-            <a className="btn btn-outline-ebffd8 " href="">Login</a>
+            <Button text="Login" class="btn-outline-ebffd8"/>
             &nbsp;
-            <a className="btn btn-fill-ebffd8" href="">Register</a>
+            <Button text="Register" class="btn-fill-ebffd8"/>
 
         </div>
 
