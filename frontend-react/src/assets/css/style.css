@@ -1,3 +1,26 @@
 body{
-    background-color:gray
+    background-color: #8DBCC7
+}
+
+.bg-light-dark {
+    background-color: #A4CCD9;
+}
+
+.btn-outline-ebffd8 {
+  border: 1px solid #EBFFD8 !important;
+  color: #EBFFD8      !important;
+}
+
+.btn-fill-ebffd8 {
+  background-color: #EBFFD8 !important;
+  border-color:     #EBFFD8 !important;
+  color:            #000000 !important;  /* or whatever text color you prefer */
+}
+
+.text-accent {
+  color: #EBFFD8 !important;
+}
+
+.text-offwhite {
+  color: #F5F5F5 !important;
 }
