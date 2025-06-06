@@ -25,5 +25,18 @@ pip install -r requirements.txt
 #    - npm install : reads package.json and installs all JS dependencies
 npm install
 
-# 5. Finished
+# 5. Create .env file for Django if it doesn't exist
+ENV_FILE="backend-drf/.env"
+echo "Ensuring .env exists at $ENV_FILE"
+if [ ! -f "$ENV_FILE" ]; then
+  cat <<EOF > "$ENV_FILE"
+SECRET_KEY="your-very-secret-key-here"
+DEBUG=True
+EOF
+  echo ".env created."
+else
+  echo ".env already exists, skipping."
+fi
+
+# 6. Finished
 echo "Environment setup complete. Virtualenv is active."
