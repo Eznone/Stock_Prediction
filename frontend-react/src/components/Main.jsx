@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import Button from './Button.jsx'
 
 const Main = () => {
   return (
+    <>
     <div className='container'>
         <div className="p-5 text-center bg-light-dark">
             <h1 className="text-light text-accent">Stock Prediction Portal</h1>
@@ -11,8 +14,8 @@ const Main = () => {
             </p>
             <Button text="Login Now" class="btn-outline-ebffd8"/>
         </div>
-    
     </div>
+    </>
   )
 }
 
