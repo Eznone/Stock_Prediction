@@ -1,0 +1,10 @@
+{
+  // format on any save (including autosave)
+  "editor.formatOnSave": true,
+
+  // ensure Prettier is used for JS/JSX
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // give Prettier a little more time when autosave is very frequent
+  "editor.formatOnSaveTimeout": 3000
+}
