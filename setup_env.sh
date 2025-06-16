@@ -20,6 +20,8 @@ fi
 # 3. Install Python dependencies from requirements.txt
 #    - pip install -r requirements.txt : reads the file and installs listed packages
 pip install -r requirements.txt
+# ensure CORS package is present
+pip install django-cors-headers
 
 # 4. Install Node.js dependencies
 #    - npm install : reads package.json and installs all JS dependencies
