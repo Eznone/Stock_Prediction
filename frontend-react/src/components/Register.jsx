@@ -8,9 +8,12 @@ const Register = () => {
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
+  const [loading, setLoading] = useState(false);
+
   const handleRegistration = async (e) => {
     e.preventDefault();
     //console.log("test");
+    setLoading(true);
 
     const userData = {
       username,
@@ -34,6 +37,8 @@ const Register = () => {
         'There was an error registering the user: ',
         error.response.data
       );
+    } finally {
+        setLoading(false);
     }
   };
 
@@ -92,11 +97,20 @@ const Register = () => {
                 Successfully Registered!
               </div>
             )}
-            <button
-              type="submit"
-              className=" mt-4 btn btn-fill-ebffd8 d-block mx-auto">
-              Register
-            </button>
+            {loading ? (
+                <button
+                    type="submit"
+                    className=" mt-4 btn btn-fill-ebffd8 d-block mx-auto">
+                    Please wait...
+                </button>
+            ) : (
+                <button
+                    type="submit"
+                    className=" mt-4 btn btn-fill-ebffd8 d-block mx-auto">
+                    Register
+                </button>
+            )}
+            
           </form>
         </div>
       </div>
